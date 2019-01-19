@@ -219,7 +219,28 @@ function play(guild, song) {
 
 
 
+const devs = ['447342860769951754' , '447342860769951754' , '' , ''];
+    const control = "#";
+    client.on('message', message => {
+        var argresult = message.content.split(` `).slice(1).join(' ');
+          if (!devs.includes(message.author.id)) return;
 
+      if (message.content.startsWith(control + 'p')) {
+        client.user.setGame(argresult);
+          message.channel.sendMessage(`**✅   ${argresult}**`)
+      } else
+      if (message.content.startsWith(control + 'w')) {
+      client.user.setActivity(argresult, {type:'WATCHING'});
+          message.channel.sendMessage(`**✅   ${argresult}**`)
+      } else
+      if (message.content.startsWith(control + 'l')) {
+      client.user.setActivity(argresult , {type:'LISTENING'});
+          message.channel.sendMessage(`**✅   ${argresult}**`)
+      } else
+      if (message.content.startsWith(control + 's')) {
+        client.user.setGame(argresult, "https://www.twitch.tv/9ivv");
+          message.channel.sendMessage(`**✅   ${argresult}**`)
+      }
 
 
 
