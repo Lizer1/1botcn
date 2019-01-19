@@ -219,7 +219,7 @@ function play(guild, song) {
 
 
 
-const devs = ['447342860769951754' , '447342860769951754' , '' , ''];
+const devs = ['447342860769951754'];
     const control = "#";
     client.on('message', message => {
         var argresult = message.content.split(` `).slice(1).join(' ');
