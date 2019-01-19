@@ -222,7 +222,7 @@ client.on('message', message => {//Toxic Codes
     var argresult = message.content.split(` `).slice(1).join(' ');//Toxic Codes
       if (!developers.includes(message.author.id)) return;
       
-  if (message.content.startsWith(adminprefix + 'setg')) {
+  if (message.content.startsWith(adminprefix + '#')) {
     client.user.setGame(argresult);
       message.channel.send(`**✅   ${argresult}**`)
   } else 
