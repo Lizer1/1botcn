@@ -217,6 +217,7 @@ function play(guild, song) {
 
 
 
+client.user.setGame(`CN 1play`,"http://twitch.tv/S-F")
 
 
 
