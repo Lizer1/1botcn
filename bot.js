@@ -28,7 +28,9 @@ client.on('ready', () => {
 
 
 
-const prefix = "1"
+
+
+const prefix = "2"
 client.on('message', async msg => { 
 	if (msg.author.bot) return undefined;
 	if (!msg.content.startsWith(prefix)) return undefined;
@@ -217,15 +219,6 @@ function play(guild, song) {
 
 
 
-const Discord = require('discord.js');
-const client = new Discord.Client();
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
-
-
-
-
 
 client.on('ready', () => {
    console.log(`----------------`);
@@ -237,7 +230,6 @@ client.on('ready', () => {
 client.user.setGame(` CK 4 EVER By LIZER`,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
 });
-
 
 
 
