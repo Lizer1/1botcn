@@ -77,7 +77,7 @@ client.on('message', async msg => {
 			        .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
 
-					.setFooter("CK - CITY KINGS")
+					.setFooter("By LiZer_PRo")
 					msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
 					
 					try {
@@ -219,7 +219,6 @@ function play(guild, song) {
 
 
 
-
 client.on('ready', () => {
    console.log(`----------------`);
       console.log(`Desert Bot- Script By : i1Suhaib`);
@@ -227,9 +226,10 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(` CO 4 EVER By LIZER`,"http://twitch.tv/S-F")
+client.user.setGame(` CO 4 EVER BY LIZER`,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
 });
+
 
 
 
